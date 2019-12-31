@@ -1,0 +1,19 @@
+{
+  "name": "pig-game",
+  "version": "1.0.0",
+  "description": "Pig Game ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bassant147/Pig-Game.git"
+  },
+  "author": "bassant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bassant147/Pig-Game/issues"
+  },
+  "homepage": "https://github.com/bassant147/Pig-Game#readme"
+}
