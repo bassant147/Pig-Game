@@ -78,46 +78,37 @@ body {
   color: #EB4D4D;
 }
 
-.player-1-panel .player-current-box { left: 25%;}
-.player-2-panel .player-current-box { left: 75%;}
-
 .player-current-box{
   background-color: #EB4D4D;
   height: 9rem;
   width: 12rem;
   border-radius: 2px;
   text-align: center;
+  padding: 1.2rem;
 
-  position: absolute;
-  top: 75%;
-  transform: translate(-50%, -50%);
+  margin: 13rem auto;
 }
 
 .player-current-label {
+  display: block;
   font-size: 1.1rem;
   color: #222;
-  
-  position: absolute;
-  top: 1.5rem;
-  left: 25%;
+  margin-bottom: 1rem;
 }
 
 .player-current-score {
   font-size: 3rem;
   color: #fff;
 
-  position: absolute;
-  top: 3.5rem;
-  left: 35%;
 }
 
-.btn-new,
-.btn-hold,
-.btn-roll {
+button {
   font-size: 2rem;
+  font-family: "Lato";
+  color: #555;
   border: none;
   background-color: transparent;
-  font-weight: 100;
+  font-weight: 300;
   text-transform: uppercase;
   
   position: absolute;
