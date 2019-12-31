@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="dice-5.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
     <title>Pig Game</title>
   </head>
   <body>
-    
+    <main class="board clearfix">
+      <div class="player-1-panel active">
+        <div class="player-name">player 1</div>
+        <div class="player-score">43</div>
+        <div class="player-current-box">
+          <span class="player-current-label">current</span>
+          <span class="player-current-score">11</span>
+        </div>
+      </div>
+      <div class="player-2-panel">
+        <div class="player-name">player 2</div>
+        <div class="player-score">72</div>
+        <div class="player-current-box">
+          <span class="player-current-label">current</span>
+          <span class="player-current-score">0</span>
+        </div>
+      </div>
+
+      <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+      <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+      <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+      <img src="dice-5.png" alt="Dice" class="dice">
+    </main>
   </body>
 </html>

@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;    
+  text-transform: uppercase;
+  color: #555;
+  background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), 
+                    url(back.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.board {
+  height: 96vh;
+  width: 73%;
+  background-color: #fff;
+  margin: 1.3rem auto;
+  text-align: center;
+  position: relative;
+}
+
+.player-1-panel,
+.player-2-panel {
+  float: left;
+  height: 100%;
+  width: 50%;
+  padding: 12rem 0;
+}
+
+.player-name {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.active { background-color: #f7f7f7; }
+
+.active .player-name::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 1.8rem;
+  right: 12rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #EB4D4D;
+}
+
+.player-score {
+  font-size: 8rem;
+  font-weight: 100;
+  color: #EB4D4D;
+}
+
+.player-1-panel .player-current-box { left: 25%;}
+.player-2-panel .player-current-box { left: 75%;}
+
+.player-current-box{
+  background-color: #EB4D4D;
+  height: 9rem;
+  width: 12rem;
+  border-radius: 2px;
+  text-align: center;
+
+  position: absolute;
+  top: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.player-current-label {
+  font-size: 1.1rem;
+  color: #222;
+  
+  position: absolute;
+  top: 1.5rem;
+  left: 25%;
+}
+
+.player-current-score {
+  font-size: 3rem;
+  color: #fff;
+
+  position: absolute;
+  top: 3.5rem;
+  left: 35%;
+}
+
+.btn-new,
+.btn-hold,
+.btn-roll {
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  font-weight: 100;
+  text-transform: uppercase;
+  
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-new {
+  top: 10%;
+}
+
+.btn-roll {
+  top: 70%;
+}
+
+.btn-hold {
+  top: 80%;
+}
+
+.dice {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10rem;
+  box-shadow: 0 1rem 4rem rgba(0,0,0, .1);
+}
