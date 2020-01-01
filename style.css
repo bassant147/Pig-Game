@@ -110,23 +110,33 @@ button {
   background-color: transparent;
   font-weight: 300;
   text-transform: uppercase;
+  cursor: pointer;
   
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  transition: all .07s;
 }
 
-.btn-new {
-  top: 10%;
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 2rem; }
+button:focus { outline: none; }
+
+i {
+  color: #EB4D4D;
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-size: 3.2rem;
+  line-height: 1;
+  vertical-align: text-top;
+  margin-top: -4px;
+  transition: margin .3s;
 }
 
-.btn-roll {
-  top: 70%;
-}
-
-.btn-hold {
-  top: 80%;
-}
+.btn-new {  top: 10%;}
+.btn-roll {  top: 70%;}
+.btn-hold {  top: 80%;}
 
 .dice {
   position: absolute;
@@ -136,3 +146,6 @@ button {
   height: 10rem;
   box-shadow: 0 1rem 4rem rgba(0,0,0, .1);
 }
+
+.winner { background-color: #f7f7f7; }
+.winner .player-name { font-weight: 300; color: #EB4D4D; }
