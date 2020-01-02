@@ -43,8 +43,8 @@ body {
   position: relative;
 }
 
-.player-1-panel,
-.player-2-panel {
+.player-0-panel,
+.player-1-panel {
   float: left;
   height: 100%;
   width: 50%;
@@ -53,7 +53,7 @@ body {
 
 .player-name {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 100;
   margin-bottom: 1rem;
   position: relative;
 }
